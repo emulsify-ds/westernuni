@@ -1,0 +1,14 @@
+uuid: 59d3cc5a-b8dc-47bb-b2c4-666cf0c6f845
+name: westernuni
+mail: adam@fourkitchens.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
