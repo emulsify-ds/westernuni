@@ -25,4 +25,3 @@ Primary Regular             |  Primary Transparent
 Colors Gray Normal            |  Colors Gray Light
 :-------------------------:|:-------------------------:
 ![Colors Gray](./colors-gray.png)  |  ![Colors Gray Light](./colors-gray-light.png)
-
