@@ -1,19 +1,26 @@
 {
-    "name": "pantheon-systems/example-drops-8-composer",
-    "description": "Install drops-8 with Composer on Pantheon.",
+    "name": "fourkitchens/sous-drupal-project",
+    "description": "Starter project for Sous a Drupal distribution featuring a theme based on Emulsify Design System.",
     "type": "project",
-    "license": "MIT",
+    "license": "GPL-2.0-or-later",
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:fourkitchens/sous-drupal-distro.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
-        "php": ">=7.0.8",
-        "composer/installers": "^1.0.20",
-        "cweagans/composer-patches": "^1.0",
-        "drupal/core-composer-scaffold": "^8.8.1",
+        "php": ">=7.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
@@ -23,7 +30,13 @@
         "rvtraveller/qs-composer-installer": "^1.1",
         "drupal/core-recommended": "^8.8",
         "pantheon-systems/drupal-integrations": "^8",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "drupal/core-composer-scaffold": "^8.8.1",
+        "fourkitchens/sous-drupal-distro": "dev-master",
+        "oomphinc/composer-installers-extender": "^1.1",
+        "vlucas/phpdotenv": "^2.4",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "behat/behat": "3.*",
@@ -45,12 +58,15 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
-        ]
+        ],
+        "psr-4": {
+            "Sous\\" : "sous"
+        }
     },
     "scripts": {
         "build-assets": [
@@ -80,9 +96,24 @@
         ]
     },
     "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/masonry": [
+                "bower-asset/masonry-layout"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -97,14 +128,28 @@
         },
         "drupal-scaffold": {
             "allowed-packages": [
-                "pantheon-systems/drupal-integrations"
+                "pantheon-systems/drupal-integrations",
+                "fourkitchens/sous-drupal-distro"
             ],
             "locations": {
                 "web-root": "./web"
             },
+            "excludes": [
+                ".eslintrc"
+            ],
             "file-mapping": {
                 "[project-root]/.editorconfig": false
-            }            
+            },
+            "initial": {
+                ".eslintignore": ".eslintignore",
+                ".eslintrc.json": ".eslintrc.json",
+                ".gitattributes": ".gitattributes",
+                ".htaccess": ".htaccess",
+                "robots.txt": "robots.txt",
+                "sites/example.settings.local.php": "sites/example.settings.local.php",
+                "sites/example.sites.php": "sites/example.sites.php"
+            },
+            "omit-defaults": false         
         }
     },
     "config": {
@@ -112,7 +157,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "7.0.8"
-        }
+            "php": "7.2"
+        }   
     }
 }

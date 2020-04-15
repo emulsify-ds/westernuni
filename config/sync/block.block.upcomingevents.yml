@@ -1,0 +1,33 @@
+uuid: 431ab083-bf97-41e9-8486-34e723fcc8e3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block:62490223-c71d-40c8-87c3-b1f3e0d46158'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - western_up
+id: upcomingevents
+theme: western_up
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:62490223-c71d-40c8-87c3-b1f3e0d46158'
+settings:
+  id: 'block_content:62490223-c71d-40c8-87c3-b1f3e0d46158'
+  label: 'Upcoming Events'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

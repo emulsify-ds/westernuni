@@ -1,0 +1,37 @@
+{% if page.sidebar|render %} {# this may or may not correctly filter sidebar #}
+  {% set sidebar = TRUE %}
+{% endif %}
+
+{% extends "@templates/_default.twig" %}
+  {% block page_header %}
+    {% if page.header %}
+      {{ page.header }}
+    {% endif %}
+  {% endblock %}
+
+  {% block page_system %}
+    {{ page.breadcrumb }}
+    {{ page.highlighted }}
+    {{ page.help }}
+    {{ messages }}
+  {% endblock %}
+
+  {% block page_title %}
+    {% if page.page_title %}
+      {{ page.page_title }}
+    {% endif %}
+  {% endblock %}
+
+  {% block page_sidebar %}
+    {{ page.sidebar }}
+  {% endblock %}
+
+  {% block page_content %}
+    {{ page.content }}
+  {% endblock %}
+
+  {% block page_footer %}
+    {% if page.footer %}
+      {{ page.footer }}
+    {% endif %}
+  {% endblock %}

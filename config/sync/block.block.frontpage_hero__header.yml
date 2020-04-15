@@ -1,0 +1,30 @@
+uuid: 536eacf3-1590-4f4f-8475-4e7e42c35238
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - western_up
+id: frontpage_hero__header
+theme: western_up
+region: page_title
+weight: 0
+provider: null
+plugin: 'entity_view:node'
+settings:
+  id: 'entity_view:node'
+  label: 'Frontpage Hero - Header'
+  provider: ctools
+  label_display: '0'
+  view_mode: hero_header
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,10 @@
+uuid: 8fc413fc-6326-43ec-81dc-c75373062a24
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.landing_page
+label: 'Landing Page'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,23 @@
+{% embed "@organisms/site/site-footer/site-footer.twig" with {
+  social_menu_items: {
+    1: {
+      title: 'Twitter',
+      url: '#',
+      icon: 'twitter'
+    },
+    2: {
+      title: 'Facebook',
+      url: '#',
+      icon: 'facebook'
+    },
+    3: {
+      title: 'Instagram',
+      url: '#',
+      icon: 'instagram'
+    }
+  }
+}%}
+  {% block footer__menu %}
+    {{ content }}
+  {% endblock %}
+{% endembed %}

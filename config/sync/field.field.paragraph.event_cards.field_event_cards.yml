@@ -1,0 +1,58 @@
+uuid: 9b1c2ba4-6971-463a-a3fd-ea6377fef66c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_cards
+    - paragraphs.paragraphs_type.event_card
+    - paragraphs.paragraphs_type.event_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.event_cards.field_event_cards
+field_name: field_event_cards
+entity_type: paragraph
+bundle: event_cards
+label: 'Event Cards'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      event_card: event_card
+    target_bundles_drag_drop:
+      card:
+        weight: 11
+        enabled: false
+      cards:
+        weight: 12
+        enabled: false
+      cta:
+        weight: 13
+        enabled: false
+      event_card:
+        enabled: true
+        weight: 14
+      event_cards:
+        weight: 15
+        enabled: false
+      image:
+        weight: 16
+        enabled: false
+      news_card:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+      text_with_media:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

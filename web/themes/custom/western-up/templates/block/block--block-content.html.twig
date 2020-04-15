@@ -1,0 +1,11 @@
+{{ title_prefix }}
+{% if label %}
+  {% include "@atoms/text/headings/_heading.twig" with {
+    heading_level: '3',
+    heading: label,
+  } %}
+{% endif %}
+{{ title_suffix }}
+{% block content %}
+  {{ content }}
+{% endblock %}

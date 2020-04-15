@@ -1,0 +1,61 @@
+uuid: 1a2531a7-b927-4fe6-b7b9-1bb043833f30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_cards
+    - paragraphs.paragraphs_type.news_card
+    - paragraphs.paragraphs_type.news_cards
+  module:
+    - entity_reference_revisions
+id: paragraph.news_cards.field_news_cards
+field_name: field_news_cards
+entity_type: paragraph
+bundle: news_cards
+label: 'News Cards'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      news_card: news_card
+    target_bundles_drag_drop:
+      card:
+        weight: 12
+        enabled: false
+      cards:
+        weight: 13
+        enabled: false
+      cta:
+        weight: 14
+        enabled: false
+      event_card:
+        weight: 15
+        enabled: false
+      event_cards:
+        weight: 16
+        enabled: false
+      image:
+        weight: 17
+        enabled: false
+      news_card:
+        enabled: true
+        weight: 18
+      news_cards:
+        weight: 19
+        enabled: false
+      text:
+        weight: 20
+        enabled: false
+      text_with_media:
+        weight: 21
+        enabled: false
+      video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

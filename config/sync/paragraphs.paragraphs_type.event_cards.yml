@@ -1,0 +1,10 @@
+uuid: 0a65a99e-3415-4453-b9a0-30a7865d6b7b
+langcode: en
+status: true
+dependencies: {  }
+id: event_cards
+label: 'Event Cards'
+icon_uuid: null
+icon_default: null
+description: 'A collection of event card paragraphs with a heading'
+behavior_plugins: {  }
