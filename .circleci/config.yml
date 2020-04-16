@@ -143,7 +143,7 @@ jobs:
       # Move Storybook instance
       - run:
           name: Move Storybook.
-          command: mv ./web/themes/custom/western-up/.out ./web/storybook
+          command: mv ./web/themes/custom/western-up/static/.out ./web/storybook
 
       - run:
           # Set TERMINUS_ENV and related environment variables.
