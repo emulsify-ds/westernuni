@@ -82,11 +82,6 @@
     "build": "npm run build-babel & npm run build-webpack",
     "develop": "concurrently --raw \"npm run webpack\" \"npm run babel\" \"npm run storybook\""
   },
-  "private": true,
-  "workspaces": [
-    "western-up-twig",
-    "western-up-scss"
-  ],
   "devDependencies": {
     "@storybook/addon-viewport": "^5.3.13"
   }
