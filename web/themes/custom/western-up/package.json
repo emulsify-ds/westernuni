@@ -9,17 +9,16 @@
     "@babel/core": "^7.8.4",
     "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
-    "@storybook/addon-a11y": "5.2.6",
-    "@storybook/addon-actions": "5.2.6",
-    "@storybook/addon-links": "5.2.6",
-    "@storybook/addons": "5.2.6",
-    "@storybook/react": "5.2.6",
+    "@storybook/addon-a11y": "5.3.18",
+    "@storybook/addon-actions": "5.3.18",
+    "@storybook/addon-links": "5.3.18",
+    "@storybook/addons": "5.3.18",
+    "@storybook/react": "5.3.18",
     "@storybook/storybook-deployer": "^2.8.1",
     "add-attributes-twig-extension": "^0.1.0",
     "autoprefixer": "^9.6.5",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
-    "babel-preset-gatsby": "^0.2.36",
     "babel-preset-minify": "^0.5.0",
     "bem-twig-extension": "^0.1.1",
     "breakpoint-sass": "^2.7.1",
@@ -36,8 +35,6 @@
     "eslint-plugin-react": "^7.16.0",
     "file-loader": "^4.2.0",
     "fs": "^0.0.1-security",
-    "gatsby": "^2.19.7",
-    "gatsby-theme-emulsify": "^1.0.0-alpha.16",
     "glob": "^7.1.4",
     "imagemin-webpack-plugin": "^2.4.2",
     "js-yaml-loader": "^1.2.2",
@@ -68,9 +65,6 @@
   },
   "scripts": {
     "setup": "git clone git@github.com:emulsify-ds/western-up-twig.git && git clone git@github.com:emulsify-ds/western-up-scss.git && yarn",
-    "styleguide": "npm run build-storybook && gatsby develop",
-    "build-styleguide": "npm run build-storybook && gatsby build",
-    "deploy-styleguide": "npm run build-storybook && gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint ./components",
     "storybook": "start-storybook -s ./dist,./western-up-twig/images -p 6006",
     "build-storybook": "build-storybook -s ./dist,./western-up-twig/images -o static/.out",
@@ -82,11 +76,6 @@
     "build": "npm run build-babel & npm run build-webpack",
     "develop": "concurrently --raw \"npm run webpack\" \"npm run babel\" \"npm run storybook\""
   },
-  "private": true,
-  "workspaces": [
-    "western-up-twig",
-    "western-up-scss"
-  ],
   "devDependencies": {
     "@storybook/addon-viewport": "^5.3.13"
   }

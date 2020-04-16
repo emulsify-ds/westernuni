@@ -14,4 +14,4 @@ cd ~/project-build/web/themes/custom/western-up
 echo -e "Step 1: sudo npm install --unsafe-perm --no-save"
 yarn
 yarn build
-# yarn build-storybook
+yarn build-storybook
