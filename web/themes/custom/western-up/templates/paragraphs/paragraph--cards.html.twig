@@ -1,0 +1,8 @@
+{% embed "@organisms/grid/grid.twig" with {
+  grid_label: content.field_heading,
+  grid_type: 'card',
+} %}
+  {% block grid_content %}
+    {{ content.field_cards }}
+  {% endblock %}
+{% endembed %}

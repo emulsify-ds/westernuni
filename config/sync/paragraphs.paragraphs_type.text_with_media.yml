@@ -1,0 +1,12 @@
+uuid: bfccdb22-1613-4cc8-a50d-5d03e1e07e2f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 33yNGQX7RxLHhybxzKQ3_F1l28CFeAH8OxDbVXz7yFI
+id: text_with_media
+label: 'Text with Media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

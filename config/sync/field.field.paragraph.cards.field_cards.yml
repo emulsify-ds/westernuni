@@ -1,0 +1,55 @@
+uuid: 1af4311e-91de-4223-85f3-c918d2a5985d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+id: paragraph.cards.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: cards
+label: cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card: card
+    target_bundles_drag_drop:
+      card:
+        enabled: true
+        weight: 10
+      cards:
+        weight: 11
+        enabled: false
+      cta:
+        weight: 12
+        enabled: false
+      event_card:
+        weight: 13
+        enabled: false
+      image:
+        weight: 14
+        enabled: false
+      news_card:
+        weight: 15
+        enabled: false
+      text:
+        weight: 16
+        enabled: false
+      text_with_media:
+        weight: 17
+        enabled: false
+      video:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

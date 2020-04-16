@@ -1,0 +1,10 @@
+uuid: 30fe2673-1d37-4bce-8486-657e7dcfe0b2
+langcode: en
+status: true
+dependencies: {  }
+id: news_card
+label: 'News Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

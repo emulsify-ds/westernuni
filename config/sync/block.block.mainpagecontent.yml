@@ -1,0 +1,20 @@
+uuid: 74924d4b-9719-44be-a6d5-a492d243de5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - western_up
+id: mainpagecontent
+theme: western_up
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

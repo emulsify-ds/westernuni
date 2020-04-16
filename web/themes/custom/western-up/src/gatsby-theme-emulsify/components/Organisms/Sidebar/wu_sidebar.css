@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:400,600,700,800|PT+Serif:400,700&display=swap');
+.sidebar__heading {
+  background: url('./logo.png') no-repeat scroll 0 0;
+  background-size: contain;
+  height: 0;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.parent-menu__toggle {
+  display: none;
+}
+
+/* Main */
+.main-content .main-title {
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 9.9%, #000000 100%), url('./city.jpg') no-repeat scroll center center;
+  background-size: cover;
+  position: relative;
+}

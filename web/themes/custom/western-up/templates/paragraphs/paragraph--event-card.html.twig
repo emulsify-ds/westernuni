@@ -1,0 +1,14 @@
+{% embed "@molecules/cards/news/news-card.twig" with {
+  news_card__extra_classes: ['grid__item'],
+  news_card__heading: content.field_heading,
+  news_card__subheading: content.field_subheading,
+  news_card__body: content.field_text.0['#text']|striptags,
+  news_card__link__text: content.field_link.0['#title'],
+  news_card__link__url: content.field_link.0['#url'],
+  news_card__date: content.field_date.0['#text'],
+  news_card__tag: 'photos',
+} %}
+  {% block news_card__img %}
+    {{ content.field_image }}
+  {% endblock %}
+{% endembed %}

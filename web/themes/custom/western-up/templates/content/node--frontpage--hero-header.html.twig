@@ -1,0 +1,7 @@
+{% embed "@molecules/hero/hero.twig" with {
+  hero__heading: label,
+} %}
+  {% block background_image %}
+    {{ content.field_hero_image }}
+  {% endblock %}
+{% endembed %}

@@ -1,0 +1,20 @@
+uuid: 3299ed24-380b-46f5-b4f4-88309eb3f1ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: vDIU_s0iwvYgvUCNo4dtVBUCvhRK74ctqlt26U3gFZA
+name: Page
+type: page
+description: 'A general content type for all standard pages.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

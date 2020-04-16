@@ -1,0 +1,12 @@
+{% embed "@molecules/cards/basic/card.twig" with {
+  card__extra_classes: ['grid__item'],
+  card__heading: content.field_heading,
+  card__subheading: content.field_subheading,
+  card__body: content.field_text.0['#text']|striptags,
+  card__link__text: content.field_link.0['#title'],
+  card__link__url: content.field_link.0['#url'],
+} %}
+  {% block card__img %}
+    {{ content.field_image }}
+  {% endblock %}
+{% endembed %}

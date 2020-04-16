@@ -1,0 +1,75 @@
+uuid: 6209a79d-f005-4e30-9837-8ebd91a488ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event_card.field_date
+    - field.field.paragraph.event_card.field_heading
+    - field.field.paragraph.event_card.field_image
+    - field.field.paragraph.event_card.field_link
+    - field.field.paragraph.event_card.field_subheading
+    - field.field.paragraph.event_card.field_text
+    - paragraphs.paragraphs_type.event_card
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.event_card.default
+targetEntityType: paragraph
+bundle: event_card
+mode: default
+content:
+  field_date:
+    weight: 4
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_datetime
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subheading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: c8740f46-6a19-4ace-89c7-c850e3975764
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_title
+    - node.type.page
+_core:
+  default_config_hash: FvVvtL1TiPaX6PkzOGMmjCcsuOUTY-ZhfUhERnbTM0g
+id: node.page.field_seo_title
+field_name: field_seo_title
+entity_type: node
+bundle: page
+label: 'SEO Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

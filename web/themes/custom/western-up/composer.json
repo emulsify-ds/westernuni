@@ -1,0 +1,22 @@
+{
+  "name": "emulsify-ds/western-up",
+  "description": "Theme for the fictitious Wester University of Pennsylvania",
+  "type": "drupal-theme",
+  "homepage": "https://github.com/emulsify-ds/western-up",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brian Lewis",
+      "email": "brian@fourkitchens.com"
+    },
+    {
+      "name": "Randy Oest",
+      "email": "randy@fourkitchens.com"
+    }
+  ],
+  "require-dev": {},
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {},
+  "extra": []
+}

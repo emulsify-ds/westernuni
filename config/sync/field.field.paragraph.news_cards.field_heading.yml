@@ -1,0 +1,19 @@
+uuid: 2d8aa54c-ea4e-4c68-8c8d-eb6f1cc5b4c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.news_cards
+id: paragraph.news_cards.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: news_cards
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

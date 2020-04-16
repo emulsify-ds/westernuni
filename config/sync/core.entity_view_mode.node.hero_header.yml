@@ -1,0 +1,10 @@
+uuid: 9b4646d5-cb6c-4860-98a4-353940762980
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.hero_header
+label: 'Hero - Header'
+targetEntityType: node
+cache: true

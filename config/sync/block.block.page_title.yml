@@ -1,0 +1,27 @@
+uuid: 3887ab05-f1fb-4629-89e6-fc9e2cc3b8d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - western_up
+id: page_title
+theme: western_up
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

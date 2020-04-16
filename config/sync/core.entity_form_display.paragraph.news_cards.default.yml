@@ -1,0 +1,46 @@
+uuid: b260164e-b9f2-414e-b816-1e46f8ed61d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_cards.field_heading
+    - field.field.paragraph.news_cards.field_news_cards
+    - paragraphs.paragraphs_type.news_cards
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+id: paragraph.news_cards.default
+targetEntityType: paragraph
+bundle: news_cards
+mode: default
+content:
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_news_cards:
+    type: inline_entity_form_complex
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    region: content
+hidden:
+  created: true
+  status: true

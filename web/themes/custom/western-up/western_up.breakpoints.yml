@@ -1,0 +1,16 @@
+# Breakpoints - change based on site need
+western_up.small:
+  label: small
+  mediaQuery: 'all and (min-width: 25em)'
+western_up.small-med:
+  label: small-med
+  mediaQuery: 'all and (min-width: 26em)'
+western_up.small-large:
+  label: small-large
+  mediaQuery: 'all and (min-width: 41em)'
+western_up.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 48em)'
+western_up.large:
+  label: large
+  mediaQuery: 'all and (min-width: 61.25em)'

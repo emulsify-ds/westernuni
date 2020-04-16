@@ -1,0 +1,28 @@
+uuid: e2c615bb-459c-416d-a22e-9a456645664d
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+  theme:
+    - western_up
+id: breadcrumbs
+theme: western_up
+region: page_title
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

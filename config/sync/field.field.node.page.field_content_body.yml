@@ -1,0 +1,73 @@
+uuid: 316b914d-9a76-44ef-9652-7c3628f7df43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_body
+    - node.type.page
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.cta
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_with_media
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: aAzdu1xKBLiaw7zOsoBPOFeDHHy3yYa4exzkV4pbNTA
+id: node.page.field_content_body
+field_name: field_content_body
+entity_type: node
+bundle: page
+label: 'Content Body'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+      text: text
+      text_with_media: text_with_media
+      video: video
+      cards: cards
+      cta: cta
+    target_bundles_drag_drop:
+      image:
+        enabled: true
+        weight: 5
+      text:
+        enabled: true
+        weight: 6
+      text_with_media:
+        enabled: true
+        weight: 7
+      video:
+        enabled: true
+        weight: 8
+      card:
+        weight: 12
+        enabled: false
+      cards:
+        enabled: true
+        weight: 13
+      cta:
+        enabled: true
+        weight: 14
+      event_card:
+        weight: 15
+        enabled: false
+      event_cards:
+        weight: 16
+        enabled: false
+      news_card:
+        weight: 18
+        enabled: false
+      news_cards:
+        weight: 19
+        enabled: false
+field_type: entity_reference_revisions

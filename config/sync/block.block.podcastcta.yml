@@ -1,0 +1,33 @@
+uuid: ccc14875-749c-4789-9e67-8ab18b841df3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block:b624adef-5b5d-4ea9-aef8-aa0eb3f5c350'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - western_up
+id: podcastcta
+theme: western_up
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:b624adef-5b5d-4ea9-aef8-aa0eb3f5c350'
+settings:
+  id: 'block_content:b624adef-5b5d-4ea9-aef8-aa0eb3f5c350'
+  label: 'Podcast CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
