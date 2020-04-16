@@ -12,8 +12,6 @@ echo "Compiling theme..."
 cd ~/project-build/web/themes/custom/western-up
 
 echo -e "Step 1: sudo npm install --unsafe-perm --no-save"
-echo -e "Step 2: sudo npm install gatsby-cli"
 yarn
 yarn build
-gatsby build
 yarn build-storybook
