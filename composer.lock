@@ -133,8 +133,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/desandro/matches-selector/zipball/42ee1cbab7469454d140bdab04d2ceed9c68b85e",
-                "reference": "42ee1cbab7469454d140bdab04d2ceed9c68b85e",
-                "shasum": null
+                "reference": "42ee1cbab7469454d140bdab04d2ceed9c68b85e"
             },
             "type": "bower-asset",
             "license": [
@@ -152,8 +151,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/metafizzy/ev-emitter/zipball/1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
-                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736",
-                "shasum": null
+                "reference": "1baa3a03d8e07f665b0eb797661fcc2b0d2a5736"
             },
             "type": "bower-asset",
             "license": [
@@ -171,8 +169,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/metafizzy/fizzy-ui-utils/zipball/72feb9fc3d6de25696291941121bb3ec2db8221e",
-                "reference": "72feb9fc3d6de25696291941121bb3ec2db8221e",
-                "shasum": null
+                "reference": "72feb9fc3d6de25696291941121bb3ec2db8221e"
             },
             "require": {
                 "bower-asset/desandro-matches-selector": ">=2.0.0,<3.0.0"
@@ -193,8 +190,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/desandro/get-size/zipball/6879e7f15b4b6e19ca392b6955edfa8d4aa6f787",
-                "reference": "6879e7f15b4b6e19ca392b6955edfa8d4aa6f787",
-                "shasum": null
+                "reference": "6879e7f15b4b6e19ca392b6955edfa8d4aa6f787"
             },
             "type": "bower-asset",
             "license": [
@@ -212,8 +208,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/desandro/masonry/zipball/3b0883cf4a4a046896719b9cf282ea74be7ffecd",
-                "reference": "3b0883cf4a4a046896719b9cf282ea74be7ffecd",
-                "shasum": null
+                "reference": "3b0883cf4a4a046896719b9cf282ea74be7ffecd"
             },
             "require": {
                 "bower-asset/get-size": ">=2.0.2,<3.0.0",
@@ -235,8 +230,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/metafizzy/outlayer/zipball/bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878",
-                "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878",
-                "shasum": null
+                "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878"
             },
             "require": {
                 "bower-asset/ev-emitter": ">=1.0.0,<2.0.0",
@@ -4247,17 +4241,17 @@
         },
         {
             "name": "drupal/thunder_admin",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/thunder_admin.git",
-                "reference": "8.x-3.2"
+                "reference": "8.x-3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-3.2.zip",
-                "reference": "8.x-3.2",
-                "shasum": "f489c275adbaad0604f3ac78eeb105ddb18b9662"
+                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "08ad3269b7806817b7bbc1b3e9ce109bbb5a8ad3"
             },
             "require": {
                 "drupal/core": "^8.7.0"
@@ -4265,8 +4259,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.2",
-                    "datestamp": "1583313960",
+                    "version": "8.x-3.3",
+                    "datestamp": "1587036807",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5198,9 +5192,7 @@
             "version": "1.8.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/blazy/-/blazy-1.8.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -5212,9 +5204,7 @@
             "version": "5.7.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.7.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.7.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -5226,9 +5216,7 @@
             "version": "1.0.6",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/eventie/-/eventie-1.0.6.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/eventie/-/eventie-1.0.6.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -5240,9 +5228,7 @@
             "version": "3.2.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-3.2.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/imagesloaded/-/imagesloaded-3.2.0.tgz"
             },
             "require": {
                 "npm-asset/eventie": "~1.0.4",
@@ -5258,9 +5244,7 @@
             "version": "1.12.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick/-/slick-1.12.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/slick/-/slick-1.12.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -5272,9 +5256,7 @@
             "version": "4.3.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/wolfy87-eventemitter/-/wolfy87-eventemitter-4.3.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/wolfy87-eventemitter/-/wolfy87-eventemitter-4.3.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -10588,6 +10570,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-28T10:15:50+00:00"
         },
         {
@@ -10643,5 +10639,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
